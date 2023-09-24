@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/edit"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/day_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        tools:text="15"
+        />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="Profits "
+            />
+
+        <TextView
+            android:id="@+id/profit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#23A328"
+            android:gravity="end"
+            tools:text="400$"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:gravity="start|center_vertical"
+        android:textSize="10sp"
+        tools:ignore="SmallSp"
+        tools:text="1000$ . 100 Km . tax 100$ . other 500$"/>
+
+
+
+
+
+</LinearLayout>

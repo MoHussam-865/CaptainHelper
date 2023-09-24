@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CaptainHelper</string>
+    <string name="add_day">Add Day</string>
+    <string name="_1000_km">Traveled Km</string>
+    <string name="money_made">Money Made</string>
+    <string name="done">Done</string>
+</resources>

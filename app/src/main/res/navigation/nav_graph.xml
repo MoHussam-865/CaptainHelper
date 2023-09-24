@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home3">
+
+    <fragment
+        android:id="@+id/addDayFragment"
+        android:name="com.android_a865.captainhelper.feature_add.presentation.AddDayFragment"
+        android:label="fragment_add_day"
+        tools:layout="@layout/fragment_add_day" >
+        <argument
+            android:name="day"
+            app:argType="com.android_a865.captainhelper.feature_home.data.DayEntity"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/home3"
+        android:name="com.android_a865.captainhelper.feature_home.presentation.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home3_to_addDayFragment"
+            app:destination="@id/addDayFragment" />
+    </fragment>
+</navigation>
